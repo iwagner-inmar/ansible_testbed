@@ -1,0 +1,9 @@
+
+- name: Debug!
+  hosts: localhost
+  become: false
+  
+  tasks:
+    - name: debug this 
+      debug:
+        var: ansible_host
